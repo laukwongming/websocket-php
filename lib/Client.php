@@ -119,12 +119,12 @@ class Client extends Base
 
         // Default headers (using lowercase for simpler array_merge below).
         $headers = array(
-            'host'                  => $host . ":" . $port,
-            'user-agent'            => 'websocket-client-php',
-            'connection'            => 'Upgrade',
-            'upgrade'               => 'websocket',
-            'sec-websocket-key'     => $key,
-            'sec-websocket-version' => '13',
+            'Host'                  => $host . ":" . $port,
+            'User-agent'            => 'websocket-client-php',
+            'Connection'            => 'Upgrade',
+            'Upgrade'               => 'websocket',
+            'Sec-WebSocket-Key'     => $key,
+            'Sec-WebSocket-Version' => '13',
         );
 
         // Handle basic authentication.
